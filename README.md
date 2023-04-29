@@ -1,12 +1,48 @@
-# Credit-Card-Fraud-Detection-using-ML
-Machine learning model using a supervised learning algorithm, such as descision trees or logistic regression, that can accurately detect credit card fraud using a large, publicly available dataset. The performance of the model will be evaluated using standard metrics such as precision, recall, and F1-score/accuracy. 
+# Credit Card Fraud Detection with Logistic Regression
 
+This project aims to detect credit card fraud using logistic regression. We explore different feature sets and apply the Synthetic Minority Over-sampling Technique (SMOTE) to address the class imbalance issue. The dataset used for this project is the "creditcard.csv" file.
 
+## Installation Requirements
 
-1.	Data Collection: I'll start by collecting a large, publicly available dataset that contains information about credit card transactions and whether they are fraudulent or not.
-2.	Data Preprocessing: i'll proceed to clean and preprocess the data by removing any missing values, handling outliers, and converting categorical variables into numerical ones.
-3.	Model Selection: Select two machine learning algorithms to implement the models.
-4.	Model Implementation: Implement the two models using Python and any relevant libraries, such as scikit-learn or TensorFlow. Train the models using the preprocessed data and evaluate the performance of the models using standard evaluation metrics, such as accuracy.
-5.	Model Comparison: Compare the performance of the two models and discuss the advantages and disadvantages of each.
-6.	Model Interpretation: Create visualizations and generate insights to understand why the models are making certain predictions.
-7.	Model Deployment: Create a web-based interface or mobile application to deploy the best-performing model, so users can interact with the system and view the results.
+- Python 3.6+
+- pandas
+- numpy
+- scikit-learn
+- imbalanced-learn
+
+You can install the required packages using `pip`:
+
+```bash
+pip install pandas numpy scikit-learn imbalanced-learn
+```
+
+## Usage
+
+1. Place the "creditcard.csv" file in the same directory as the Python script.
+2. Run the Python script. It will perform the following steps:
+    - Load the dataset into a pandas DataFrame.
+    - Split the dataset into training and testing sets.
+    - Train a logistic regression classifier on the full feature set and evaluate its performance.
+    - Apply SMOTE to the training set and retrain the classifier.
+    - Compare the performance of the full feature set with and without SMOTE.
+    - Identify the best features to retain and evaluate the performance of the reduced feature set.
+    - Apply SMOTE to the reduced feature set and retrain the classifier.
+    - Compare the performance of the full feature set with SMOTE and the reduced feature set with SMOTE.
+
+## Overall Structure
+
+The code is organized into the following sections:
+
+- Importing necessary libraries
+- Loading the dataset and performing basic data exploration
+- Splitting the dataset into training and testing sets
+- Training the logistic regression classifier on the full feature set
+- Applying SMOTE to the training set
+- Evaluating the performance of the full feature set with and without SMOTE
+- Identifying the best features to retain
+- Training the classifier on the reduced feature set
+- Applying SMOTE to the reduced feature set
+- Evaluating the performance of the reduced feature set with and without SMOTE
+- Comparing the performance of the full feature set with SMOTE and the reduced feature set with SMOTE
+
+After running the script, you will see the performance metrics of the different feature sets with and without SMOTE. This will help you determine the best approach for credit card fraud detection using logistic regression.
