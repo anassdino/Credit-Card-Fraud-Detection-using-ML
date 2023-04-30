@@ -1,6 +1,6 @@
 # Credit Card Fraud Detection with Logistic Regression
 
-This project aims to detect credit card fraud using logistic regression. We explore different feature sets and apply the Synthetic Minority Over-sampling Technique (SMOTE) to address the class imbalance issue. The dataset used for this project is the "creditcard.csv" file.
+This project aims to detect credit card fraud using logistic regression. We explore different feature sets and apply the Synthetic Minority Over-sampling Technique (SMOTE) to address the class imbalance issue. The dataset used for this project is the "creditcard.csv" file. The dataset can also be found and downloaded using this link https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
 ## Installation Requirements
 
